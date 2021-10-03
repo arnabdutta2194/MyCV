@@ -1,0 +1,272 @@
+%-------------------------
+% Resume in Latex
+% Author : Arnab Dutta
+% Based off of: https://github.com/jakeryang/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Arnab Dutta} \\ \vspace{5pt}
+    \textbf{\Large Senior Analyst/Senior Software Engineer} \\ \vspace{3pt}
+    \small \faPhone* \texttt{+91-7469953331} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt}
+    \href{mailto:arnab5021@gmail.com}{\texttt {arnab5021@gmail.com}} $|$
+    \hspace{1pt} \faGithub \hspace{2pt} \href{https://github.com/arnabdutta2194}{\texttt {arnabdutta2194}} $|$
+    \hspace{1pt} \faMapMarker* \hspace{2pt}\href{https://goo.gl/maps/CDMdX2MjZAS26pnk9}{\texttt {Siliguri, WB, India}}
+    \\ \vspace{-3pt}
+\end{center}
+
+%-----------EXPERIENCE----------
+\section{ABOUT ME}
+{\texttt Proactive software engineer possessing in-depth knowledge of various programming languages and best practices for development. Solutions-based collaborator well-versed in developing and simulating automated tasks, developing and implementing automated cloud-based use cases, building reusable code and backend of Web Applications. Offering 2.4 years of experience creating and applying technology to develop, automate, monitor, and control production and delivery of client requirements.}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Capgemini}{October 2020 -- Present}
+      {\textbf{Senior Analyst/Senior Software Engineer}}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Built a Demo Portal which is used by majority of \textbf{Global ADC Management Team} to showcase demos to clients, where entire workflow is displayed on portal along with case validations.}
+        \resumeItem{Generated process models illustrating automation engineering progress, specifications, and details.Introduced methodologies and best practices to optimize and make the code reusable which resulted in reducing development timelines by \textbf{30\%.}}
+        \resumeItem{Efficiently designed and developed many Automation Frameworks like Daily Health Check Anomaly Ticketing, Global Change Notifier System, Email To Ticket Classifier etc.}
+        \resumeItem{Developed reusable modules for End-To-End Service Now automation(API Based Polling) which is now being used by developers from the different team for integrating their frameworks with Service Now and has reduced development effort by \textbf{40\%}.}
+        \resumeItem{Developed cloud-based use cases using Azure and AWS.}
+        \resumeItem{Built reporting dashboard for clients,from which they can fetch reports of amount of emails processed via Email-To-Ticket Framework based on date filters for auditing.}
+        \resumeItem{\textbf{Lead a team} of two that worked on multiple POCs to establish cloud-based automation using Azure and AWS SDKs.}
+        
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Capgemini}{July 2019 -- September 2020}
+      {\textbf{Analyst/Software Engineer}}{Bengaluru, KA, India}
+      \resumeItemListStart
+        \resumeItem{Designed and developed multiple health check reporting modules for Storage and Networking tools.}
+        \resumeItem{Designed,developed \& deployed multiple bots for End-to-End Windows Automation like AD On-boarding Tasks, Distribution List/Conference Room/Shared Mailbox Creation/Access as well as Exchange Administration which are currently deployed in over \textbf{20 accounts}.}
+        \resumeItem{Developed over \textbf{30} Automation Bots using Python, Powershell Scripting languages as well as using orchestrators like HPOO.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+
+\section{SELECTED PROJECTS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Email Classifier \& Email To Ticket Framework} $|$ \emph{Python, Powershell, Tensorflow, Keras, NLTK}}{June 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{\textbf{Primary Goal :} To reduce the work of Service Desk Agents who had to process around 200-250 Emails on an average per day. }
+            \resumeItem{\textbf{Solution :} In association with ML Team, developed an Email Classifier Model using LSTM and NLP which categorized the emails based on subject, body \& sender. Post categorization, the workflow will create the ticket in the ITSM tool(Service Now) and also send a notification to the appropriate resolver group and sender.}
+            \resumeItem{\textbf{Result :} This solution is accepted globally and is now deployed in around \textbf{18 accounts} and has reduced over \textbf{17 FTE} of clients.}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+        {\textbf{Client Demo Portal} $|$ \emph{HTML, CSS, Bootstrap, Javascript, PHP, AJAX, jQuery}}{June 2020 -- Present}
+          %{\textbf{Client Demo Portal}}{July. 2021 -- Aug. 2021}
+          \resumeItemListStart
+            \resumeItem{\textbf{Primary Goal :} To simplify the process of how management gives framework presentations to clients.}
+            \resumeItem{\textbf{Solution :} Developed a Web Application keeping Email To Ticket Framework as the base. Worked on entire backend workflow to manage how the scripts were triggered and data was passed to frontend.}
+            \resumeItem{\textbf{Result :} The majority of the Global ADC Management team now uses this portal to showcase workflow demo to clients and has \textbf{removed the dependency of the Development/QA team to be present in the call in time of the demo}.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+         {\textbf{Windows/O365/Exchange Process Automation} $|$ \emph{Python, Powershell, Exchange, O365, Sharepoint, Azure}}{June 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{\textbf{Primary Goal :} To automate various day-to-day processes of Wintel, Cloud \& O365 team and to be able to find a solution to generalize various SD-Workflows}
+            \resumeItem{\textbf{Solution :} Worked in a team of three to automate various processes end-to-end and built a solution which was \textbf{95\%} reusable with little to no modifications.}
+            \resumeItem{\textbf{Result :} Solution was well accepted by multiple accounts and as process was developed by modular approach, components was deployed to accounts as per requirements.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+    \textbf{Languages} {: Python, Powershell, Java, JavaScript}\vspace{2pt} \\
+    \textbf{Frontend} {: HTML, CSS, Bootstrap}\vspace{2pt} \\
+    \textbf{Frameworks} {: Django, AJAX, jQuery}\vspace{2pt} \\
+    \textbf{Databases} {: MSSQL, MySQL, MariaDB, Mongo DB, Amazon RDS, Azure CosmosDB}\vspace{2pt} \\
+    \textbf{DevOps} {: Git, GitHub, Docker, Bitbucket, Tortoise SVN, AWS CloudFormation, ARM Template}\vspace{2pt} \\
+    \textbf{Cloud}     {: Azure, AWS}\vspace{2pt} \\
+    \textbf{Operating System} {: Microsoft Windows, Linux(RHEL, CentOS, Ubuntu, Fedora)}\vspace{2pt} \\
+    \textbf{Tools and IDEs} {: Visual Studio Code, Powershell ISE, Postman, SoapUI, Service Now, BMC Remedy, HPOO}\vspace{2pt} \\}
+    }
+ \end{itemize}
+ 
+
+%-----------EDUCATION-----------
+\section {EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dr. Bidhan Chandra Roy Engineering College}{Aug. 2015 -- June 2019}
+      {Bachelor of Technology in Electronics and Communications Engineering. 8.56 CGPA}{Durgapur, WB, India}
+  \resumeSubHeadingListEnd
+
+
+
+ %-----------Certifications-----------
+\section{CERTIFICATIONS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+    \textbf{Coursera : Python For Everybody} {(04/2020 - Present)}\vspace{2pt} \\
+    \textbf{IIEC DOT : Docker} {(05/2020 - Present)}\vspace{2pt} \\
+    \textbf{Coursera : Agile Software Development} {(03/2021 - Present)}\vspace{2pt} \\
+    \textbf{Microsoft : Azure Fundamentals - AZ-900} {(06/2021 - 06/2023)}\vspace{2pt} \\
+    \textbf{Coursera : Git \& Github} {(06/2021 - Present)}\vspace{2pt} \\
+    \textbf{Microsoft : Azure Administrator Associate - AZ-104} {(08/2021 - 08/2022)}\vspace{2pt} \\
+    }
+    }
+ \end{itemize}
+ 
+ %-----------Achievements-----------
+\section{ACHIEVEMENTS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+    \textbf{1st Rank -} {Capgemini L1 Training Schedule.} \vspace{2pt} \\
+    \textbf{2nd Rank -} {Capgemini Simulation Lab - Problem Solving (Python \& Unix).} \vspace{2pt} \\
+    \textbf{Standout Performer Q3 -} {Best Performer of Q3 2020.} \vspace{2pt} \\
+    \textbf{Trendsetter Q3 -} {Best Performer of Q3 2021.} \vspace{2pt} \\
+    \textbf{Other Recognition -} {Received appreciation from GCC Leadership and project's EVP(Executive Vice President) for developing and deploying multiple Automation Frameworks.} \vspace{2pt} \\
+    \textbf{Trainer and Assessor -} {Trained and assessed multiple fresher batches on technologies like Windows,Linux and Database.} \vspace{2pt} \\
+    \textbf{Interests -} {Event Management, Football, Table Tennis.} \vspace{2pt} \\
+    }
+    }
+ \end{itemize}
+%-------------------------------------------
+\end{document}
