@@ -6,7 +6,7 @@ The Price Optimization Tool is a web-based application designed to help business
 Allows users to create, view, update, and delete product information including details like name, category, cost, selling price, stock, and sales based on their roles.\
 Provides advanced search and filtering capabilities to efficiently find and organize products.\
 Demand Forecast Integration:\
-Users can view demand forecasts for various products, displayed in a linear graph showing the relationship between demand and selling price.\
+Users can view demand forecasts for various products, displayed in a linear graph showing the relationship between demand and selling price.
 ## Pricing Optimization:
 Recommends optimal prices for products based on demand, cost, and market conditions, helping businesses maximize profitability.\
 User Roles and Permissions:\
@@ -18,7 +18,7 @@ The Price Optimization Tool incorporates dynamic user roles with different level
 ### Admin:
 Product Management: Can view, add, update, and delete product information.\
 Demand Forecast: Can view demand forecasts for all products.\
-Pricing Optimization: Can access and view optimized pricing recommendations for all products.\
+Pricing Optimization: Can access and view optimized pricing recommendations for all products.
 ### Supplier:
 Product Management: Can view, add, update, and delete product information.\
 Demand Forecast: Can view demand forecasts for products they are associated with.\
@@ -26,7 +26,7 @@ Pricing Optimization: Can access and view optimized pricing recommendations for 
 ### Buyer:
 Product Management: Can only view product information (no permissions to add, update, or delete).\
 Demand Forecast: Can view demand forecasts for the products.\
-Pricing Optimization: Can view optimized pricing recommendations, but cannot modify or manage them.\
+Pricing Optimization: Can view optimized pricing recommendations, but cannot modify or manage them.
 
 
 ## Features : 
@@ -46,7 +46,7 @@ Pricing Optimization: Can view optimized pricing recommendations, but cannot mod
 ## Prerequisites : 
 Python: Version 3.8 or higher\
 PostgreSQL: Database for storing application data\
-pip: Python package manager\
+pip: Python package manager
 
 
 ## Setup Instructions for Backend Codebase : 
@@ -216,7 +216,7 @@ Request Body:
   "refresh": "your_refresh_token"
 }`
 
-#### Verify Email: /accounts/verify-email/<uidb64>/<token>/ (GET)
+#### Verify Email: /accounts/verify-email/uidb64/token/ (GET)
 Activate a user's account by clicking the link sent to their email. 
 
 
